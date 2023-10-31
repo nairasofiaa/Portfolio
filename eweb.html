@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meine Hauptseite</title>
+    <link rel="stylesheet" type="text/css" href="eweb.css">
+    <script>
+        window.onload = function () {
+            var iframe = document.querySelector('iframe');
+            var body = iframe.contentDocument.body;
+            var html = iframe.contentDocument.documentElement;
+            var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+            iframe.style.height = height + 'px';
+        };
+    </script>
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="100" frameborder="0" style="border: 0;"></iframe>
+
+    
+    <!-- Hier können Sie den Inhalt Ihrer Hauptseite einfügen -->
+</body>
+</html>
