@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="header.css">
@@ -10,11 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <style>
+        body {
+            margin: 0;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
+    <script>
+        function resizeIframe() {
+            var iframe = document.getElementById('myIframe');
+            if (iframe) {
+                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            }
+        }
+
+        // Call resizeIframe when the content inside the iframe changes
+        window.addEventListener('load', function () {
+            resizeIframe();
+        });
+
+        // If the content inside the iframe changes dynamically, you may need to call resizeIframe at appropriate places in your code.
+    </script>
+
     <div class="hauptcontainer">
-        
         <div class="vorstellung_naira">
             <h1>Naira Orlando</h1>
             <h2>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web experiences for end-users.</h2>
@@ -22,12 +47,8 @@
                 <span class="material-symbols-outlined"> pin_drop </span> <p>Bern, Schweiz</p>
             </div>
         </div>
-        
 
-       
-            <img src="images/portrait.png" alt="">
-      
-        
+        <iframe id="myIframe" src="your_content_page.html" onload="resizeIframe()"></iframe>
     </div>
 </body>
 </html>
