@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mein Portfolio</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Rating -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="hauptcontainer">
+        <div class="vorstellung_naira">
+            <h1>Naira Orlando</h1>
+            <h2>Produktmanagerin, Projektmanagerin & Product Owner - Ich bringe Ihre Projekte zum Abschluss.</h2>
+            <div class="icon">
+                <span class="material-symbols-outlined"> pin_drop </span> <p>Bern, Schweiz</p>
+            </div>
+            <hr>
+
+            <!-- Zitate via API -->
+            <head>
+                <h4>Zitat des Tages:</h4>
+            </head>
+
+            <div id="quote-container">
+            </div>
+
+            <script src="quotes.js"></script>
+
+            <!-- Portrait -->
+        </div>
+        <div class="portrait_naira"></div>
+    </div>
+
+    <!-- KPI -->
+    <div class="KPI-Hauptcontainer">
+        <div class="kpi-section">
+            <div class="kpi">
+                <h1>31</h1>
+                <p>Abgeschlossene Projekte</p>
+            </div>
+            <div class="kpi">
+                <h1>25</h1>
+                <p>Betreute Kunden</p>
+            </div>
+            <div class="kpi">
+                <h1>+150</h1>
+                <p>Meetings</p>
+            </div>
+            <div class="kpi">
+                <h1>84</h1>
+                <p>ECTS</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills-Abschnitt außerhalb des Hauptcontainers -->
+    <div class="skills">
+        <h1>Meine Skills</h1>
+        <div class="skill-set">
+            <div class="skill">
+                <div class="skill-label">
+                    <h2>Kommunikation</h2>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="meter">
+                    <span style="width: 90%;" class="skill-gradient"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-label">
+                    <h2>Problemlösung</h2>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="meter">
+                    <span style="width: 85%;" class="skill-gradient"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-label">
+                    <h2>Zusammenarbeit</h2>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="meter">
+                    <span style="width: 90%;" class="skill-gradient"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-label">
+                    <h2>Technisches Verständnis</h2>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="meter">
+                    <span style="width: 75%;" class="skill-gradient"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-label">
+                    <h2>SCRUM</h2>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="meter">
+                    <span style="width: 85%;" class="skill-gradient"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projekte-Abschnitt -->
+    <div class="projects">
+        <h1>Betreute Projekte</h1>
+        <div class="project-section">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/enersis.PNG" >
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Digital Twin</h2>
+                        <h3>2019-2020</h3>
+                        <p>Projektmanagement eines digitalen Zwillings für Kommunen und Gemeinden.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/stoor.PNG">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Stoor</h2>
+                        <h3>2022-2022</h3>
+                        <p>Digitalisierung sämtlicher Prozesse eines Handelwarenunternehmens in Bern, mittels Einführung eines ERP Systems (Odoo).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/sygnum.PNG" alt="Avatar">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Onboardingn</h2>
+                        <h3>2023-2023</h3>
+                        <p>Einführung eines digitalen Onboarding der Sygnum Bank mittels Qualifizierter Signatur.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="images/valiant.PNG">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Onboarding</h2>
+                        <h3>2023-2023</h3>
+                        <p>Personen Identifikation für die Kontoeröffnung der Valiant Bank.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timeline-Abschnitt -->
+    <section class="design-section">
+        <div><h1>Berufserfahrung</h1></div>
+        <div class="timeline">
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h2>2023 - heute</h2>
+                <h3>Produktmanagerin</h3>
+                <p>Verantwortlich für die Weiterentwicklung des Produktes, das Projektmanagement und der Kundenbetreuung.</p>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h2>2022 - 2022</h2>
+                <h3>Business Analystin</h3>
+                <p>Verantwortlich für die Anforderungsanalyse für die Digitalisierung von Geschäftsprozessen mittels ERP.</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-empty"></div>
+            <div class="timeline-empty"></div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h2>2021 - 2022</h2>
+                <h3>Business Development Managerin</h3>
+                <p>Verantwortlich für die konstante Weiterentwicklung des Unternehmens mittels Identifizierung, Bewertung und Erschließung neuer Geschäftsfelder.</p>
+            </div>
+            <div class="timeline-component timeline-content">
+                <h2>2019 - 2021</h2>
+                <h3>Teamlead Office Management</h3>
+                <p>Führung eines dreiköpfigen Teams im Front- und Backoffice.</p>
+            </div>
+            <div class="timeline-middle">
+                <div class="timeline-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating-Abschnitt -->
+    <div class="Rating-Hauptcontainer">
+        <h1>Bewertung</h1>
+        <h2>Wie bewertest du mein Portfolio?</h2>
+        <div class="rating left">
+            <div class="stars right">
+                <a class="star"></a>
+                <a class="star"></a>
+                <a class="star"></a>
+                <a class="star"></a>
+                <a class="star"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontakt-Abschnitt -->
+    <section class="contact-section" id="contact">
+        <h1>Kontakt</h1>
+        <h2>Du kannst mich über die folgenden Kanäle erreichen:</h2>
+        <div class="contact-icons">
+            <!-- Ersetze die Links mit deinen eigenen Profil-Links -->
+            <a href="mailto:naira.orlando@students.bfh.ch.com" target="_blank" title="E-Mail"><i class="material-icons">email</i></a>
+            <a href="https://www.linkedin.com/in/naira-orlando-19785116a/" target="_blank" title="LinkedIn"><i class="material-icons">account_circle</i></a>
+            <a href="https://github.com/nairasofiaa" target="_blank" title="GitHub"><i class="material-icons">code</i></a>
+        </div>
+    </section>
+</body>
+</html>
